@@ -6,3 +6,8 @@
 .add-btn:disabled:hover {
     cursor: not-allowed;
 }
+
+.align-items{
+    margin-top: 80px;
+    margin-left: -275px;
+}

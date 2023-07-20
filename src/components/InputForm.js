@@ -27,18 +27,17 @@ const InputForm = (props) => {
     return (
         <div className={"pt-5"}>
             <Form onSubmit={e => handleInput(e)}>
-                <FormLabel htmlFor={"input"}>Enter word or number</FormLabel>
+                <FormLabel htmlFor={"input"}>Enter Number</FormLabel>
                 <Form.Row>
                     <Col>
                         <input
                             className={"form-control"}
                             type={"text"} id="input"
-                            placeholder={"ex. 10 or desk"}
                             onChange={handleChange}
                         />
                     </Col>
                     <Col>
-                        <input type={"submit"} className={"btn btn-primary add-btn"} value={"add"} disabled={!enabled}/>
+                        <input type={"submit"} className={"btn btn-primary add-btn"} value={"Add Node"} disabled={!enabled}/>
                     </Col>
                 </Form.Row>
             </Form>
