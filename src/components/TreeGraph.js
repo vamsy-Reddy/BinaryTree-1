@@ -59,7 +59,6 @@ let TreeGraph = (props) => {
       update(tree.toGraph()); // Update the representation to reflect the changes
     }
   };
-  
 
   return (
     <Container>
@@ -80,7 +79,7 @@ let TreeGraph = (props) => {
         &nbsp;&nbsp;&nbsp;&nbsp;
         <Col sm={4} className="align-items">
           <button
-            className={"btn btn-danger"}
+            className={"btn btn-warning"}
             onClick={() => {
               clear();
             }}
@@ -94,11 +93,15 @@ let TreeGraph = (props) => {
       <Row>
         <Col>
           <div
-            style={{ height: "60vh" }}
+            style={{
+              height: "60vh",
+              border: "1px dashed grey",
+              borderRadius: "6px", // Add dashed border style here
+            }}
             ref={(divElement) => {
               setDiv(divElement);
             }}
-            className={"border border-dark"}
+            // className={"border border-dashed"}
           >
             <Graph
               options={props.options}
