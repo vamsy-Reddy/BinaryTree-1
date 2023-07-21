@@ -27,7 +27,7 @@ const InputForm = (props) => {
     return (
         <div className={"pt-5"}>
             <Form onSubmit={e => handleInput(e)}>
-                <FormLabel htmlFor={"input"}>Enter Node</FormLabel>
+                <FormLabel htmlFor={"input"}>Enter Node:</FormLabel>
                 <Form.Row>
                     <Col>
                         <input

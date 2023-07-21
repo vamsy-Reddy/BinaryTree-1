@@ -11,7 +11,7 @@ export const options = {
         width: 2
     },
     nodes: {
-        shape: "ellipse"
+        shape: "circle"
     },
     interaction: {
         dragNodes: false,

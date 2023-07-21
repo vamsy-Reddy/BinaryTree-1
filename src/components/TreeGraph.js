@@ -76,8 +76,8 @@ let TreeGraph = (props) => {
             Delete Node
           </button>
         </Col>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <Col sm={4} className="align-items">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Col sm={5} className="align-items">
           <button
             className={"btn btn-warning"}
             onClick={() => {
@@ -96,12 +96,11 @@ let TreeGraph = (props) => {
             style={{
               height: "60vh",
               border: "1px dashed grey",
-              borderRadius: "6px", // Add dashed border style here
+              borderRadius: "6px",
             }}
             ref={(divElement) => {
               setDiv(divElement);
             }}
-            // className={"border border-dashed"}
           >
             <Graph
               options={props.options}
